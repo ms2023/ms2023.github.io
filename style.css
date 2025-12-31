@@ -1,0 +1,217 @@
+/* ---------- Base Styles ---------- */
+
+body {
+  font-family: "Merriweather", Georgia, serif;
+  background-color: #FFFFFF; /* Cream White */
+  color: #2B2B2B; /* Text Dark */
+  margin: 0;
+  padding: 0;
+  line-height: 1.8;
+}
+
+a {
+  color: #8A79B7; /* Medium Lavender */
+  text-decoration: none;
+}
+
+a:hover {
+  color: #A0C4FF; /* Pastel Blue */
+  text-decoration: underline;
+}
+
+/* ---------- Layout ---------- */
+
+nav {
+  max-width: 900px;
+  margin: 30px auto 0 auto;
+  padding: 15px 20px;
+  background-color: #D6DBF5; /* Pale Periwinkle */
+  border-radius: 12px;
+}
+
+nav a {
+  margin-right: 20px;
+  font-weight: 500;
+}
+
+/* ---------- Sections ---------- */
+
+section {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 0 20px;
+  background-color: #FFFFFF;
+}
+
+/* ---------- Headings ---------- */
+
+h1 {
+  font-size: 2.6rem;
+  margin-bottom: 10px;
+  color: #8A79B7; /* Medium Lavender */
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  padding-bottom: 6px;
+  border-bottom: 3px solid #4B7C7C; /* Mint Green */
+  color: #4A3F6B; /* Deep Lavender */
+}
+
+h3 {
+  font-size: 1.4rem;
+  margin-top: 28px;
+  margin-bottom: 10px;
+  color: #6A4A85; /* Lavender Shade */
+}
+
+h4 {
+  font-size: 1.1rem;
+  margin-top: 20px;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #0F4C75; /* Pastel Blue */
+}
+
+/* ---------- Text ---------- */
+
+p {
+  margin-bottom: 16px;
+  color: #2B2B2B;
+}
+
+ul {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 6px;
+}
+
+/* ---------- Experience & Projects ---------- */
+
+.experience,
+.project {
+  margin-bottom: 40px;
+  padding-left: 15px;
+  border-left: 4px solid #B5E7A0; /* Mint Green */
+  background-color: #BDE0FE; /* Soft Sky Blue */
+}
+
+.experience p,
+.project p {
+  margin-bottom: 8px;
+}
+
+.project ul {
+  margin-top: 8px;
+}
+
+/* ---------- Coursework Cards ---------- */
+
+.course {
+  margin-bottom: 24px;
+}
+
+/* Top-Level Coursework Cards: Software, Foundations, Systems */
+.top-course-card {
+  background-color: #BDE0FE; /* Soft Pastel Blue */
+  border-left: 4px solid #4B7C7C; /* Mint Green accent */
+  padding: 14px 18px;
+  margin-bottom: 14px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.top-course-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Completed Coursework Cards */
+.other-course-card {
+  background-color: #E6E0FF; /* Soft Lavender */
+  border-left: 4px solid #4B7C7C; /* Mint Green accent */
+  padding: 14px 18px;
+  margin-bottom: 14px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.other-course-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Projected Coursework Cards */
+.projected-course-card {
+  background-color: #A0E7E5; /* Soft Mint */
+  border-left: 4px solid #4B7C7C; /* Mint Green accent */
+  padding: 14px 18px;
+  margin-bottom: 14px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.projected-course-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Lists inside cards */
+.other-course-card ul,
+.projected-course-card ul {
+  margin: 0;
+  padding-left: 20px;
+  list-style-type: disc;
+  color: #2B2B2B;
+}
+
+.other-course-card ul li,
+.projected-course-card ul li {
+  margin-bottom: 6px;
+  line-height: 1.5;
+}
+
+/* ---------- Subtle Emphasis ---------- */
+
+strong {
+  font-weight: 600;
+  color: #4A3F6B; /* Deep Lavender */
+}
+
+/* ---------- Footer ---------- */
+
+footer {
+  max-width: 900px;
+  margin: 60px auto 30px auto;
+  padding: 0 20px;
+  font-size: 0.9rem;
+  color: #555555; /* Text Muted */
+  text-align: center;
+  background-color: #D6DBF5; /* Pale Periwinkle */
+  border-radius: 12px;
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 600px) {
+  nav a {
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+}
