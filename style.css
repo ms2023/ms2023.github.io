@@ -92,12 +92,59 @@ li {
 }
 
 /* ---------- Experience & Projects ---------- */
+/* ---------- Experience Enhancements ---------- */
+
+.experience {
+  margin-bottom: 40px;
+  padding: 22px 20px 20px 18px;
+  border-left: 4px solid #4B7C7C;; /* Mint Green */
+  background-color: #BDE0FE; /* Soft Sky Blue */
+  border-radius: 10px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.experience:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+}
+
+/* Highlight specific technical terms */
+.highlight-hazard {
+  color: #FF6B6B; /* Coral Red for hazards */
+  font-weight: 600;
+}
+
+.highlight-severity {
+  color: #FFA94D; /* Soft Orange for severity */
+  font-weight: 600;
+}
+
+code {
+  background-color: #E6E0FF; /* Soft lavender highlight */
+  padding: 2px 4px;
+  border-radius: 4px;
+  font-family: "Courier New", monospace;
+  color: #4A3F6B;
+}
+
+/* Experience link styling */
+.experience-link {
+  color: #6A4A85; /* Lavender Shade */
+  font-weight: 600;
+  text-decoration: underline dotted;
+}
+
+.experience-link:hover {
+  color: #203e3e; /* Pastel Blue on hover */
+  text-decoration: underline;
+}
+
 
 .experience,
 .project {
   margin-bottom: 40px;
   padding-left: 15px;
-  border-left: 4px solid #B5E7A0; /* Mint Green */
+  border-left: 4px solid #4B7C7C; /* Mint Green */
   background-color: #BDE0FE; /* Soft Sky Blue */
 }
 
