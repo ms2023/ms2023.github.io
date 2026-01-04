@@ -12,5 +12,84 @@
             <a href="experience.html">Experience</a>
             <a href="projects.html">Projects</a>
         </nav>
+        <section>
+            <div class="project">
+                <h3>Unix Shell Extensions and Process Management</h3>
+
+                <p>
+                    This project extends a provided Unix shell skeleton by implementing core
+                    systems-level functionality related to process execution, signal handling,
+                    and persistent command history. My work focused on integrating operating
+                    system concepts into an existing command-parsing framework rather than
+                    building a shell entirely from scratch.
+                </p>
+
+                <p>
+                    I implemented process creation and execution using <code>fork</code>,
+                    <code>execvp</code>, and <code>wait</code>, enabling both foreground and
+                    background command execution. I also added a persistent command history
+                    mechanism backed by file I/O, allowing commands to be stored across sessions
+                    and re-executed through a custom history recall interface.
+                </p>
+
+                <p>
+                    The shell supports asynchronous behavior through signal handling, including
+                    a <code>SIGINT</code> handler that allows users to view command history without
+                    terminating the shell. Internally, recent commands are managed using a
+                    fixed-size circular buffer, requiring careful state management and edge-case
+                    handling.
+                </p>
+
+                <h4>Skills & Technologies</h4>
+                <ul>
+                    <li>C programming</li>
+                    <li>Unix process management (fork, exec, wait)</li>
+                    <li>Signal handling (SIGINT)</li>
+                    <li>File I/O and persistent state</li>
+                    <li>Circular buffers and memory management</li>
+                    <li>Extending existing codebases</li>
+                </ul>
+
+                <a href="https://github.com/ms2023/CSE2431_Lab5" target="_blank">
+                    View GitHub Repository
+                </a>
+            </div>
+
+            <div class="project">
+                <h3>Multiple Sclerosis Progression Simulation</h3>
+
+                <p>
+                    I built a Python-based simulation to model simplified cycles of demyelination
+                    and remyelination in Multiple Sclerosis. The simulation represents neurons as
+                    nodes in a randomly generated graph and tracks neuron health over time using
+                    configurable damage and recovery rates. This allowed me to explore how varying
+                    disease severity and treatment parameters impact overall system behavior.
+                </p>
+
+                <p>
+                    The system initializes a neural network using NetworkX, assigns health values
+                    to each neuron, and visualizes disease progression through color-coded nodes.
+                    The simulation alternates between demyelination and remyelination phases, where
+                    neurons probabilistically lose or regain health based on parameterized inputs.
+                    Matplotlib is used to render each iteration, making changes in neuron health
+                    easy to observe and compare across simulation steps.
+                </p>
+
+                <h4>Skills & Technologies</h4>
+                <ul>
+                    <li>Python</li>
+                    <li>Simulation design and parameterized modeling</li>
+                    <li>Graph-based systems (NetworkX)</li>
+                    <li>Data visualization with Matplotlib</li>
+                    <li>Probabilistic state updates</li>
+                    <li>Translating real-world concepts into computational models</li>
+                </ul>
+
+                <a href="https://github.com/ms2023/MSSimulation" target="_blank">
+                    View GitHub Repository
+                </a>
+            </div>
+
+        </section>
     </body>
 </html>
