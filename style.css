@@ -226,6 +226,80 @@ code {
   line-height: 1.5;
 }
 
+/* ---------- Projects Page Enhancements ---------- */
+
+/* Project Grid (overview cards) */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  margin-top: 30px;
+}
+
+/* Project Overview Card */
+.project-card {
+  background-color: #E6ECF8; /* Soft blue-gray, consistent with theme */
+  border-left: 4px solid #0F4C75; /* Deep sea blue accent */
+  padding: 18px 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+}
+
+.project-card h3 {
+  margin-top: 0;
+  color: #0F4C75;
+}
+
+.project-card .tech {
+  font-size: 0.9rem;
+  color: #3B4A6B;
+}
+
+/* ---------- Detailed Project Sections ---------- */
+
+/* Override shared experience styling */
+.project {
+  background-color: #F2F5FB; /* Lighter than experience */
+  border-left: 4px solid #0F4C75; /* Deep sea blue */
+  padding: 22px 24px;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+
+.project p {
+  margin-bottom: 14px;
+}
+
+/* Project skill lists */
+.project ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.project ul li {
+  margin-bottom: 6px;
+}
+
+/* Project links */
+.project a,
+.project-card a {
+  font-weight: 600;
+  color: #0F4C75;
+  margin-right: 14px;
+}
+
+.project a:hover,
+.project-card a:hover {
+  color: #1B6CA8;
+  text-decoration: underline;
+}
+
 /* ---------- Subtle Emphasis ---------- */
 
 strong {
